@@ -1,10 +1,10 @@
-from django.conf.urls import include, url
-from django.contrib import admin
+from django.conf.urls.defaults import patterns, include, url
 
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'', include('hula2.urls')),
-]
+urlpatterns = patterns('',
+
+     url(r'^admin/', include('django.contrib.admin.urls')),
+)
+
 
    
 
